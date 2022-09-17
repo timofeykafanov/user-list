@@ -4,12 +4,13 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute';
-import Users from './components/Users/Users';
+import Home from './components/Home/Home';
 import Error from './components/Error/Error';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import User from './components/User/User';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(true);
@@ -20,7 +21,13 @@ function App() {
       <Routes>
         <Route path='/' element={
           <ProtectedRoute loggedIn={loggedIn}>
-            <Users />
+            <Home />
+          </ProtectedRoute>
+        } />
+
+        <Route path='/user' element={
+          <ProtectedRoute loggedIn={loggedIn}>
+            <User />
           </ProtectedRoute>
         } />
 

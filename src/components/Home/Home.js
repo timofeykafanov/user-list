@@ -1,9 +1,9 @@
 import Card from '../Card/Card';
-import './Users.css';
+import './Home.css';
 
-function Users() {
+function Home() {
   return (
-    <main className='users'>
+    <main className='home'>
       <Card />
       <Card />
       <Card />
@@ -14,4 +14,4 @@ function Users() {
   )
 }
 
-export default Users;
+export default Home;
