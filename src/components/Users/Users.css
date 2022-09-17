@@ -1,0 +1,9 @@
+.users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  padding: 100px;
+  margin: auto;
+  max-width: 1040px;
+  box-sizing: border-box;
+}

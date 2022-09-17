@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
 
   return (
     <div className="page">

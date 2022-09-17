@@ -1,10 +1,16 @@
+import Card from '../Card/Card';
 import './Users.css';
 
 function Users() {
   return (
-    <div>
-      <p>users</p>
-    </div>
+    <main className='users'>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </main>
   )
 }
 
