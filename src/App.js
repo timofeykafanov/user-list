@@ -15,7 +15,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
 
   return (
-    <div className="app">
+    <div className="page">
       <Header />
       <Routes>
         <Route path='/' element={
