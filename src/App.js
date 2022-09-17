@@ -8,7 +8,6 @@ import Home from './components/Home/Home';
 import Error from './components/Error/Error';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
-import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import User from './components/User/User';
 
@@ -43,7 +42,6 @@ function App() {
           <Error />
         } />
       </Routes>
-      <Footer />
     </div>
   );
 }

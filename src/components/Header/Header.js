@@ -14,7 +14,7 @@ function Header() {
               <p className='header__email'>george.bluth@reqres.in</p>
             </div>
           </Link>
-          <button className='header__button' type='button'>Sign out</button>
+          <Link className='header__link' to='/login'>Sign out</Link>
         </div>
       </div>
     </header>

@@ -1,0 +1,28 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px;
+  margin: auto;
+  max-width: 500px;
+}
+
+.error__title {
+  font-size: 150px;
+  margin: 0;
+}
+
+.error__text {
+  margin: 40px;
+  font-size: 30px;
+}
+
+.error__link {
+  color: white;
+  font-size: 25px;
+  transition: .2s;
+}
+
+.error__link:hover {
+  opacity: .7;
+}
