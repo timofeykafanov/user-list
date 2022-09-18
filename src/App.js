@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
 import './App.css';
 
@@ -12,11 +12,26 @@ import Header from './components/Header/Header';
 import User from './components/User/User';
 
 function App() {
-  const [loggedIn, setLoggedIn] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  function handleLogin() {
+    setLoggedIn(true)
+  }
+  
+  function handleRegister() {
+    navigate('/login')
+  }
 
   return (
     <div className="page">
-      <Header />
+      {location.pathname === '/login' ||
+        location.pathname === '/register' ? 
+        <></> :
+        <Header />
+      }
       <Routes>
         <Route path='/' element={
           <ProtectedRoute loggedIn={loggedIn}>
@@ -31,11 +46,11 @@ function App() {
         } />
 
         <Route path='/login' element={
-          <Login />
+          <Login loggedIn={loggedIn} handleLogin={handleLogin} />
         } />
 
         <Route path='/register' element={
-          <Register loggedIn={loggedIn} />
+          <Register  loggedIn={loggedIn} handleRegister={handleRegister} />
         } />
 
         <Route path='*' element={
