@@ -15,8 +15,7 @@ function Header(props) {
       <div className='header__container'>
         <Link className='header__logo' to='/' />
         {
-          currentUser === {} ?
-          <></> :
+          JSON.parse(localStorage.getItem('loggedIn')) === true ?
           <div className='header__user'>
             <Link className='header__info' to='/user'>
               <img className='header__avatar' src={currentUser.avatar} alt='user avatar' />
@@ -26,7 +25,8 @@ function Header(props) {
               </div>
             </Link>
             <Link className='header__link' to='/login' onClick={handleLogout}>Sign out</Link>
-          </div>
+          </div> :
+          <></>
         }
       </div>
     </header>
