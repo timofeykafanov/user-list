@@ -1,12 +1,12 @@
 import './Card.css';
 
-function Card() {
+function Card(props) {
   return (
     <div className='card'>
-      <img className='card__avatar' src='https://reqres.in/img/faces/1-image.jpg' alt='user avatar' />
+      <img className='card__avatar' src={props.user.avatar} alt='user avatar' />
       <div className='card__about'>
-        <p className='card__name'>George Bluth</p>
-        <p className='card__email'>george.bluth@reqres.in</p>
+        <p className='card__name'>{`${props.user.first_name} ${props.user.last_name}`}</p>
+        <p className='card__email'>{props.user.email}</p>
       </div>
     </div>
   )

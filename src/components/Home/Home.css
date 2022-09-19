@@ -1,9 +1,50 @@
 .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 100px;
-  padding: 100px;
+  padding: 100px 0 50px;
   margin: auto;
   max-width: 1040px;
   box-sizing: border-box;
+}
+
+.home__pages {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+
+.home__button {
+  border: none;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.home__button:hover {
+  opacity: .7;
+}
+
+.home__button_active {
+  border-bottom: 2px white solid;
+}
+
+@media screen and (max-width: 1000px) {
+  .home__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .home__list {
+    grid-template-columns: 1fr;
+  }
 }
