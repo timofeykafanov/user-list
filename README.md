@@ -1,3 +1,6 @@
+I completed this test assignment without using redux and bootstrap because I didn't have time to deal with them in the allotted time. Please be understanding.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
