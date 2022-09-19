@@ -1,4 +1,4 @@
-## I completed this test assignment without using redux and bootstrap because I didn't have time to deal with them in the allotted time. Please be understanding.
+## I completed this test assignment without using redux and bootstrap because I didn't have time to deal with them in the allotted time. But I am ready to learn them as soon as possible.
 
 
 # Getting Started with Create React App
